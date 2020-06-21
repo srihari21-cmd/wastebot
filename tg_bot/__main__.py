@@ -18,18 +18,18 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
 Hi {}, my name is {}! 
-I am an Anime themed group management bot with some fun extras [;)](https://telegra.ph/file/095d7e696096e21b06447.jpg)
+I am an Anime themed group management bot with some fun extras [;)](https://telegra.ph/file/0c81caf684cf2e44dbe4c.jpg)
 
 You can find the list of available commands with /help.
 
-[Kigyō's Repo](https://github.com/Dank-del/EnterpriseALRobot) 
+[Mia's Repo](https://telegra.ph/file/60da6c9f4e85e1a23083c.jpg) 
 
-The support group chat is at @YorktownEagleUnion
+The support group chat is at @Super_botz_support
 """
 
 HELP_STRINGS = """
 Hey there! My name is *{}*.
-I'm a part of *Eagle Union*
+I'm a part of *@super_botz*
 Have a look at the following for an idea of some of \
 the things I can help you with.
 *Main* commands available:
@@ -44,7 +44,7 @@ And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
 
-KIGYO_IMG = "https://telegra.ph/file/e5100e06c03767af80023.jpg"
+MIA_IMG = "https://telegra.ph/file/0c81caf684cf2e44dbe4c.jpg"
 
 DONATE_STRING = """I'm free for everyone!! """
 
@@ -136,7 +136,7 @@ def start(bot: Bot, update: Update, args: List[str]):
             first_name = update.effective_user.first_name
             update.effective_message.reply_photo(KIGYO_IMG,
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
-                parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="Add Kigyō to your group",
+                parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="Add MIA to your group",
                                                                        url="t.me/{}?startgroup=true".format(bot.username))]]))
     else:
         update.effective_message.reply_text("Yo, whadup?")
