@@ -18,18 +18,18 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
 Hi {}, my name is {}! 
-I am an Anime themed group management bot with some fun extras [;)](https://telegra.ph/file/0c81caf684cf2e44dbe4c.jpg)
+I am  group management bot with some fun extras [;)](https://extraimages.net/images/2020/12/12/rOCKY.jpg)
 
 You can find the list of available commands with /help.
 
-[Mia's Repo](https://telegra.ph/file/60da6c9f4e85e1a23083c.jpg) 
+[ROCKY's Repo](https://telegra.ph/file/60da6c9f4e85e1a23083c.jpg) 
 
 The support group chat is at @Super_botz_support
 """
 
 HELP_STRINGS = """
 Hey there! My name is *{}*.
-I'm a part of *@super_botz*
+I'm a part of *@IndianTopMovieZ*
 Have a look at the following for an idea of some of \
 the things I can help you with.
 *Main* commands available:
@@ -44,7 +44,7 @@ And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
 
-MIA_IMG = "https://telegra.ph/file/0c81caf684cf2e44dbe4c.jpg"
+ROCKY_IMG = "https://extraimages.net/images/2020/12/12/rOCKY.jpg"
 
 DONATE_STRING = """I'm free for everyone!! """
 
